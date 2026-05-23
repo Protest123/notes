@@ -1,7 +1,7 @@
 # Мои шпаргалки по Git
 
 ## Основные команды
-- git status
-- git add <файл>
-- git commit -m "сообщение"
-- git log --oneline
+- git status - проверить состояние
+- git add <файл> - добавить в staging
+- git commit -m "сообщение" - сохронить коммит
+- git log --oneline - история коммитов
