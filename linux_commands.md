@@ -43,7 +43,6 @@ rm -rf folder/ # удалить без вопросов (ОСТОРОЖНО!)
 ---
 
 ## 11. `grep` — поиск текста
-Ищет строки, содержащие заданный образец.
 
 grep "error" log.txt               # найти строки с "error"
 grep -i "warning" log.txt          # без учёта регистра
@@ -51,47 +50,50 @@ grep -r "TODO" ./                  # рекурсивно по всем файл
 grep -n "function" script.py       # показать номера строк
 
 ##12. find — поиск файлов
-Ищет файлы по имени, размеру, типу.
 
 find . -name "*.txt"               # найти все .txt в текущей папке
 find /home -type f -size +10M      # файлы больше 10 МБ
 find . -type d -name "backup"      # папки с именем backup
 find . -mtime -1                   # файлы, изменённые за последние 24 часа
+
 ##13. chmod — права доступа
-Меняет права на файл/папку.
 
 chmod +x script.sh                 # сделать исполняемым
 chmod 755 file.txt                 # rwxr-xr-x
 chmod 600 secret.txt               # только для владельца
 chmod -R 744 folder/               # рекурсивно для всей папки
-Права в цифрах: 4 = read, 2 = write, 1 = execute
 
 ##14. ps — процессы
-Показывает запущенные процессы.
 
 ps aux                             # все процессы
 ps aux | grep nginx                # найти процесс nginx
+
 ##15. kill — остановить процесс
 
 kill 1234                          # вежливо завершить
 kill -9 1234                       # принудительно убить
+
 ##16. df — место на диске
 
 df -h                              # свободное место (в GB/MB)
 df -h /home                        # только для конкретной папки
+
 ##17. du — размер папки
 
 du -sh ~/notes/                    # общий размер папки
 du -sh *                           # размер всех файлов/папок
+
 ##18. tar — архивы
 
 tar -czf archive.tar.gz folder/   # создать архив
-tar -xzf archive.tar.gz            # распаковать
-tar -tf archive.tar.gz             # посмотреть содержимое
+tar -xzf archive.tar.gz           # распаковать
+tar -tf archive.tar.gz            # посмотреть содержимое
+
 ##19. ssh — удалённый доступ
 
 ssh user@host                      # подключиться
 ssh user@host -p 2222              # на другой порт
+
 ##20. scp — копировать через SSH
 
 scp file.txt user@host:/path/     # скопировать на сервер
