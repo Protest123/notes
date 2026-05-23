@@ -5,7 +5,7 @@
 ---
 
 ## 🐧 Linux
-- [Первые 10 команд](linux_commands.md) — `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cat`, `nano`, `cp`, `mv`, `rm`
+- [Мои 20 команд](linux_commands.md) — `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cat`, `nano`, `cp`, `mv`, `rm`
 
 ## 📦 Git
 - [Основные команды](#) — ты уже здесь (всё в этом файле ниже)
